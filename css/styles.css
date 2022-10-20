@@ -260,7 +260,7 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 min-width: 528px;
-min-height: 181px;
+min-height: 581px;
 background-color: var(--primary-background-color);
 z-index: 11;
 }
