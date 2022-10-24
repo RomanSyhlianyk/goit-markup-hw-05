@@ -712,8 +712,10 @@ p {
 
 .is-hidden {
   visibility: hidden;
-  opacity: 0;
-  cursor: pointer;
+}
+
+.is-hidden .modal {
+  scale: 0;
 }
 
 .backdrop {
@@ -724,7 +726,7 @@ p {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
-  transition-property: opacity, visibility;
+  transition-property: visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4 0 0.2 1);
 }
@@ -742,6 +744,9 @@ p {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  transition-property: scale;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4 0 0.2 1);
 }
 
 .modal-close-button {
