@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webStudio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -13,70 +13,79 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- --------HEADER-------  -->
     <header class="header">
-      <div class="container">
-        <nav class="nav">
-          <a class="logo" href="./index.html"
-            ><span class="accent">Web</span>Studio</a
-          >
-          <ul class="list nav-list">
-            <li class="item">
-              <a href="./index.html" class="link">Студія</a>
+      <div class="conteiner header-box">
+        <div class="header-nav-box">
+          <nav class="header-nav">
+            <a href="index.html" class="logo"
+              ><span class="accent-logo">Web</span>Studio</a
+            >
+            <ul class="header-nav-list">
+              <li class="header-nav-item">
+                <a href="index.html" class="header-nav-link ">Студія</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="portfolio.html " class="header-nav-link current">Портфоліо</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-contact-box">
+          <ul class="header-contact-list">
+            <li class="header-contact-item">
+              <a class="header-contact-link" href="mailto:info@devstudio.com">
+                <svg width="16" height="12" class="header-contact-icon">
+                  <use href="./img/icon-svg/icons-svg.svg#icon-mail"></use>
+                </svg>
+                <span>info@devstudio.com</span>
+              </a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
+            <li class="header-contact-item">
+              <a class="header-contact-link" href="tel:+380961111111">
+                <svg class="header-contact-icon" height="16px" width="10px">
+                  <use href="./img/icon-svg/icons-svg.svg#icon-smartphone"></use>
+                </svg>
+                <span class="header-contact-info">+38 096 111 11 11</span>
+              </a>
             </li>
-            <li class="item"><a href="#" class="link">Контакти</a></li>
           </ul>
-        </nav>
-        <ul class="list contact-list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="contact-link link">
-              <svg width="16" height="12" class="mail-icon">
-                <use href="./images/symbol-defs.svg#icon-mail"></use>
-              </svg>
-              <span>info@devstudio.com</span></a
-            >
-          </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="contact-link link"
-              ><svg width="10" height="16" class="mail-icon">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg><span>+38 096 111 11 11</span></a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
+    <!-- ----------MAIN-------- -->
     <main>
-      <section class="portfolio section">
-        <div class="container">
+      <section class="portfolio">
+        <div class="conteiner">
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="list-button">
             <li class="item">
-              <button type="button" class="button">Усі</button>
+              <button type="button" class="portfolio-button">Усі</button>
             </li>
             <li class="item">
-              <button type="button" class="button">Веб-сайти</button>
+              <button type="button" class="portfolio-button">Веб-сайти</button>
             </li>
             <li class="item">
-              <button type="button" class="button">Додатки</button>
+              <button type="button" class="portfolio-button">Додатки</button>
             </li>
             <li class="item">
-              <button type="button" class="button">Дизайн</button>
+              <button type="button" class="portfolio-button">Дизайн</button>
             </li>
             <li class="item">
-              <button type="button" class="button">Маркетинг</button>
+              <button type="button" class="portfolio-button">Маркетинг</button>
             </li>
           </ul>
           <ul class="list-portfolio">
             <li class="item">
               <a href="#" class="link portfolio-card">
                 <div class="portfolio-thumb">
-                  <img src="./images/portfolio-1.jpg" alt="Ноутбук" width="370" />
+                  <img src="./img/img/portfolio-1.jpg" alt="Ноутбук" width="370" />
                   <div class="portfolio-thumb-desc">
                     <p class="portfolio-thumb-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
@@ -91,7 +100,7 @@
               <a href="#" class="link portfolio-card">
                 <div class="portfolio-thumb">
                   <img
-                  src="./images/portfolio-2.jpg"
+                  src="./img/img/portfolio-2.jpg"
                   alt="Гра в баскетбол"
                   width="370"
                   />
@@ -111,7 +120,7 @@
               <a href="#" class="link portfolio-card">
                 <div class="portfolio-thumb">
                   <img
-                  src="./images/portfolio-3.jpg"
+                  src="./img/img/portfolio-3.jpg"
                   alt="Логотип ресторану"
                   width="370"
                     />
@@ -131,7 +140,7 @@
               <a href="#" class="link portfolio-card">
                 <div class="portfolio-thumb">
                 <img
-                  src="./images/portfolio-4.jpg"
+                  src="./img/img/portfolio-4.jpg"
                   alt="Навушники"
                   width="370"
                 />
@@ -148,7 +157,7 @@
             <li class="item">
               <a href="#" class="link portfolio-card">
                 <div class="portfolio-thumb">
-                <img src="./images/portfolio-5.jpg" alt="Коробки" width="370" />
+                <img src="./img/img/portfolio-5.jpg" alt="Коробки" width="370" />
                  <div class="portfolio-thumb-desc">
                     <p class="portfolio-thumb-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
@@ -163,7 +172,7 @@
               <a href="#" class="link portfolio-card">
                 <div class="portfolio-thumb">
                 <img
-                  src="./images/portfolio-6.jpg"
+                  src="./img/img/portfolio-6.jpg"
                   alt="Комп'ютер"
                   width="370"
                 />
@@ -180,7 +189,7 @@
             <li class="item">
               <a href="#" class="link portfolio-card">
                 <div class="portfolio-thumb">
-                <img src="./images/portfolio-7.jpg" alt="Журнал" width="370" />
+                <img src="./img/img/portfolio-7.jpg" alt="Журнал" width="370" />
                  <div class="portfolio-thumb-desc">
                     <p class="portfolio-thumb-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
@@ -197,7 +206,7 @@
               <a href="#" class="link portfolio-card">
                 <div class="portfolio-thumb">
                 <img
-                  src="./images/portfolio-8.jpg"
+                  src="./img/img/portfolio-8.jpg"
                   alt="Етикетка"
                   width="370"
                 />
@@ -215,7 +224,7 @@
               <a href="#" class="link portfolio-card">
                 <div class="portfolio-thumb">
                 <img
-                  src="./images/portfolio-9.jpg"
+                  src="./img/img/portfolio-9.jpg"
                   alt="Людина працює за ноутбуком"
                   width="370"
                 />
@@ -233,68 +242,72 @@
         </div>
       </section>
     </main>
+    <!-- -----------FOOTER-------- -->
     <footer class="footer">
-      <div class="container">
-        <div class="info-box">
-          <a href="./index.html" class="logo"
-          ><span class="accent">Web</span>Studio</a
-        >
-        <address class="address">
-          <ul class="address-list list">
-            <li class="item">
-              <a
-                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="link"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="contact"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="item">
-              <a href="tel:+380961111111" class="contact">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+      <div class="footer-box conteiner">
+        <div class="footer-adress-box">
+          <a href="index.html" class="footer-logo">
+            <span class="accent-logo">Web</span>Studio</a
+          >
+          <address class="footer-adress-desc">
+            <ul class="footer-adress-list">
+              <li class="footer-adress-item">
+                <a
+                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="footer-adress-link"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="footer-adress-item">
+                <a href="mailto:info@devstudio.com" class="footer-contact-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-contact-item">
+                <a href="tel:+38096111 1111" class="footer-contact-link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
         <div class="join-box">
           <p class="join-text">приєднуйтесь</p>
-        <ul class="list join-list">
-          <li class="join-item">
-            <a href="" class="join-link">
-              <svg class="join-icon">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="join-item">
-            <a href="" class="join-link">
-              <svg class="join-icon">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="join-item">
-            <a href="" class="join-link">
-              <svg class="join-icon">
-                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="join-item">
-            <a href="" class="join-link">
-              <svg class="join-icon">
-                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+          <ul class="join-list">
+            <li class="join-list-item">
+              <a href="" class="join-link">
+                <svg class="join-link-icon">
+                  <use href="./img/icon-svg/icons-svg.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-list-item">
+              <a href="" class="join-link">
+                <svg class="join-link-icon">
+                  <use href="./img/icon-svg/icons-svg.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-list-item">
+              <a href="" class="join-link">
+                <svg class="join-link-icon">
+                  <use href="./img/icon-svg/icons-svg.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-list-item">
+              <a href="" class="join-link">
+                <svg class="join-link-icon">
+                  <use href="./img/icon-svg/icons-svg.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
+    
   </body>
 </html>
