@@ -150,7 +150,7 @@ p {
   color: var(--black-text-color);
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4 0 0.2 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact-box {
@@ -175,14 +175,14 @@ p {
   color: var(--grey-text-link);
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4 0 0.2 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact-icon {
   fill: var(--grey-text-link);
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4 0 0.2 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact-info {
@@ -251,7 +251,7 @@ p {
   cursor: pointer;
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4 0 0.2 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -400,7 +400,7 @@ p {
   border-radius: 50%;
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4 0 0.2 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-network-link:hover,
@@ -414,10 +414,11 @@ p {
   fill: var(--grey-swg-color);
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4 0 0.2 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-team-network-link:hover .our-team-network-icon {
+.our-team-network-link:hover .our-team-network-icon,
+.our-team-network-link:focus .our-team-network-icon {
   fill: var(--white-text-color);
 }
 
@@ -451,7 +452,7 @@ p {
   border: 1px var(--grey-swg-color) solid;
   transition-property: border-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4 0 0.2 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -465,7 +466,7 @@ p {
   fill: var(--grey-swg-color);
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4 0 0.2 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover .customers-link-icon,
@@ -513,6 +514,14 @@ p {
   line-height: 1.71;
 
   color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+  color: var(--accent-color);
 }
 
 .join-box {
@@ -544,7 +553,7 @@ p {
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4 0 0.2 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-link:hover,
@@ -728,7 +737,7 @@ p {
   z-index: 1;
   transition-property: visibility;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4 0 0.2 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -746,7 +755,7 @@ p {
   border-radius: 4px;
   transition-property: scale;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4 0 0.2 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button {
